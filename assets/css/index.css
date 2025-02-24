@@ -47,7 +47,7 @@ src: local('Helvetica Bold Oblique'), url('/assets/Helvetica-BoldOblique.woff') 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica, Poppins, Roboto, sans-serif;
+    font-family: "Helvetica", Poppins, Roboto, sans-serif;
 }
 
 .padding1 {
@@ -57,11 +57,26 @@ src: local('Helvetica Bold Oblique'), url('/assets/Helvetica-BoldOblique.woff') 
     padding: 50px;
 }
 
+.padding-bottom-50 {
+    padding-bottom: 50px;
+}
+.padding-bottom-20 {
+    padding-bottom: 20px;
+}
+.padding-bottom-10 {
+    padding-bottom: 10px;
+}
+
 .hidden {
     display: none;
 }
+
 .flex {
     display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .flex-row {
@@ -76,37 +91,77 @@ src: local('Helvetica Bold Oblique'), url('/assets/Helvetica-BoldOblique.woff') 
     gap: 50px;
 }
 
+.gap-100 {
+    gap: 120px;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
 .image-icon {
     width: 50px;
+}
+
+.width50 {
+    width: 50%;
+}
+
+.light1 {
+    background-color: azure;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.font1 {
+}
+
+.font2 {
+
+}
+
+.font3 {
+    font-weight: 600;
+}
+
+.bold {
+
 }
 
 .hero {
     background-image: url("../images/bgimage.png");
     background-size: cover;
     height: 120vh;
-    padding: 50px 50px;
+    padding: 30px 50px;
     overflow: hidden;
 }
 .hero-image {
     position: relative;
     top: 0;
-    /* z-index: -1; */
-    height: 120vh;
+    width: auto;
+    height: auto;
 }
 
 .intro-container {
-    display: flex;
     flex-direction: row-reverse;
     justify-content: space-between; 
 }
 
 .intro {
-    width: 45%;
+    width: 40%;
     color: aliceblue;
-    margin-top: 100px;
+    margin-top: 200px;
+    padding-right: 50px;
 }
 
 .intro h1 {
+    font-family: "Architects Daughter Regular";
     font-size: 3rem;
     margin-bottom: 20px;
 }
@@ -114,22 +169,19 @@ src: local('Helvetica Bold Oblique'), url('/assets/Helvetica-BoldOblique.woff') 
 .intro p {
     font-size: 1.5rem;
     margin-bottom: 30px;
+    line-height: 2em;
 }
 
 nav {
-    display: flex;
     justify-content: space-between;
     padding-bottom: 100px;
-}
-
-.hamburger-open {
-    width: 4vw;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .logo {
-    margin-left: 40px;
-    width: 4vw;
-    height: 4vw;
+    width: 3vw;
+    height: 3vw;
 }
 
 .featured-work {
@@ -138,8 +190,11 @@ nav {
 
 .featured-top {
     font-size: 3rem;
-    display: flex;
     justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.first-work {
     padding-bottom: 50px;
 }
 
@@ -149,8 +204,7 @@ nav {
 }
 
 .works {
-    padding: 30px 150px 150px 150px;
-    display: flex;
+    padding: 50px 150px 50px 150px;
     flex-wrap: wrap;
     justify-content: space-between;
     /* flex-basis: 200px; */
@@ -168,10 +222,12 @@ nav {
 }
 
 button {
-    padding: 20px;
-    border-radius: 10px;
+    padding: 20px 40px;
+    border-radius: 5px;
     background-color: aquamarine;
     border: none;
+    font-size: 1.2rem;
+    font-weight: 700;
     /* color: antiquewhite; */
 }
 
