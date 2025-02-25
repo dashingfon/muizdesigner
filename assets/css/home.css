@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
 :root {
     --dark: #2a3030;
     --fs-sm: clamp(0.8rem, 0.97vi + 0.5rem, 1.41rem);
@@ -13,7 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Helvetica", Poppins, Roboto, sans-serif;
+    font-family: "Space Grotesk", Poppins, Roboto, sans-serif;
 }
 
 a {
@@ -41,6 +43,9 @@ a {
 .justify-content-space-between {
     justify-content: space-between;
 }
+.justify-content-space-around {
+    justify-content: space-around;
+}
 
 .overflow-hidden {
     overflow: hidden;
@@ -59,11 +64,10 @@ a {
 }
 
 .padding-100 {
-    padding: min(2.5em, 4%);
+    padding: min(2.5em, 10%);
 }
 
 .margin-botttom-100 {
-    
 }
 .margin-botttom-100 {
 
@@ -284,28 +288,28 @@ a {
 
 }
 
-.botton-100 {
-    
+.bottom-100 {
+    bottom: 0;
 }
-.botton-200 {
+.bottom-200 {
 
 }
-.botton-300 {
+.bottom-300 {
 
 }
-.botton-400 {
+.bottom-400 {
 
 }
-.botton-500 {
+.bottom-500 {
 
 }
-.botton-600 {
+.bottom-600 {
 
 }
-.botton-700 {
+.bottom-700 {
 
 }
-.botton-800 {
+.bottom-800 {
 
 }
 
@@ -349,7 +353,7 @@ a {
 }
 
 .portrait {
-    width: 55%;
+    width: 47%;
     max-width: 500px;
     object-fit: cover;
 }
@@ -362,11 +366,12 @@ a {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .intro-container {
         height: 100%;
         flex-direction: column-reverse;
         align-items: center;
+        gap: 80px;
     }
     p {
         max-width: 65%;
